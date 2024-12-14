@@ -1,0 +1,111 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+     width:100%;
+    height: 110vh;
+    background-image:url('https://images.herzindagi.info/image/2022/Oct/delhi-placessss.jpg' );
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position:relative;
+    isolation: isolate;
+    background-position: center center;
+    
+}
+
+body::after{
+    content:'' ;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210226/pngtree-fun-colorful-yellow-orange-green-gold-line-watercolor-background-image_569125.jpg');
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .3;
+}
+nav{
+    width: 100%;
+    height:15vh ;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(249, 249, 173);
+    color:rgb(73, 16, 73);
+    display: flex;
+    position: fixed;
+    justify-content:space-between ;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+width: 25%;
+text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display:flex ;
+    justify-content: space-around;
+}
+nav .menu a{
+    text-decoration: none;
+    color: darkred;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-top: 280px;
+}
+nav .menu a:fist-child{
+    color: #340538;
+}
+
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px white;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+
+}
+.Change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(70, 34, 12);
+}
+@keyframes changetext{
+    0%{content:"KERALA";}
+    20%{content: "DARJEELING";}
+    35%{content: "AGRA";}
+    60%{content: "DELHI";}
+    80%{content: "MUMBAI";}
+    100%{content: "ASSAM";}
+}
+html{
+    scroll-behavior: smooth ;
+}
+#s2 img {
+   height: 250px;
+   width: 300px;
+   margin-left: 20px;
+   border: 2px solid black;
+   justify-content: space-evenly;
+   margin-bottom: 20px;
+   
+   
+}
+/* .img-text{
+    text-align: justify;
+} */
